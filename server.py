@@ -32,7 +32,7 @@ def subtract():
         numbers = Numbers(data['first'], data['second'])
         result = Result(numbers.first - numbers.second)
         return jsonify(result._dict_)
-    else:
+    else : 
         return jsonify(error="Invalid input data"), 400
 
 if _name_ == '_main_':
